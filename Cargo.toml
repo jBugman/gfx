@@ -1,5 +1,5 @@
 [package]
-name = "gfx-compiler"
+name = "gfx_compiler"
 version = "0.1.0"
 authors = ["Sergey Parshukov <codedby@bugman.me>"]
 readme = "README.md"
@@ -13,3 +13,5 @@ name = "gfx"
 path = "src/main.rs"
 
 [dependencies]
+failure_ext = { git = "https://github.com/jBugman/rusty_toolbox/", features = [ "color" ] }
+future_rust = { git = "https://github.com/jBugman/rusty_toolbox/" }
