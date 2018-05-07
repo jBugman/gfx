@@ -1,2 +1,6 @@
 /target
-**/*.rs.bk
+/classes
+/checkouts
+*.jar
+/.lein-*
+/.nrepl-port

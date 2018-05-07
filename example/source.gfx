@@ -1,26 +1,28 @@
 // Package fun provides types of the Fun language.
-module fun
+package fun
 
 import "github.com/jBugman/fun-lang/func-parse/fun/code"
 
 // Expr is a generic s-expression.
-pub enum Expr
-    | Atom Atom
-    | List List
+enum Expr {
+    Atom Atom
+    List List
+}
 
 // Atom is an atom.
-pub enum Atom
-    | Ident Ident
-    | Integer Integer
+enum Atom {
+    Ident Ident
+    Integer Integer
+}
 
 // List is a list.
-pub struct List {
+struct List {
     Pos code.Pos `json:"pos"`
     XS  []Expr   `json:"xs"`
 }
 
 // Ident is an identifier.
-pub struct Ident {
+struct Ident {
     Pos code.Pos `json:"pos"`
     X   string   `json:"x"`
 }
